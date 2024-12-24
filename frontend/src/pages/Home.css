@@ -1,0 +1,29 @@
+.homepage {
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .homepage-header h1 {
+    color: #004080;
+  }
+  
+  .homepage-main {
+    margin-top: 20px;
+  }
+  
+  .homepage-button {
+    background-color: #004080;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .homepage-button:hover {
+    background-color: #0059b3;
+  }
+  
