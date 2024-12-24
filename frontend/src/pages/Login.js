@@ -27,7 +27,6 @@ const LoginForm = () => {
     axios.post('http://localhost:8000/api/login', formData)
       .then((response) => {
         console.log('Login successful:', response.data);
-        // Store the token or handle user authentication
       })
       .catch((error) => {
         setError('Invalid credentials. Please try again.');
@@ -38,7 +37,6 @@ const LoginForm = () => {
   // Handle forgot password
   const handleForgotPassword = () => {
     console.log("Redirect to forgot password page");
-    // Redirect to forgot password page or show modal
   };
 
   return (
@@ -53,6 +51,7 @@ const LoginForm = () => {
             value={formData.username}
             onChange={handleChange}
             placeholder="Enter Username"
+            autoComplete='off'
             required
           />
         </div>
@@ -65,6 +64,7 @@ const LoginForm = () => {
             value={formData.password}
             onChange={handleChange}
             placeholder="Enter Password"
+            autoComplete='new-password'
             required
           />
         </div>
